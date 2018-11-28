@@ -1,0 +1,16 @@
+To get the respective individual countries EEZ folders, visit:
+  http://www.marineregions.org/gazetteer.php?p=search
+  
+  Important fields-
+  1. Search [Country name]
+  2. Place Type [find EEZ]
+  
+If search is successful, you should see a link e.g. 
+  http://www.marineregions.org/gazetteer.php?p=details&id=8484
+  (Vietnam Exclusive Economic Zone)
+  
+  At the bottom of the page, you should see a line in this format:
+    [Download	Layer: MarineRegions:eez - format:]
+    For the format, choose "Shapefile".
+    Click "Download" and save the folder to your chosen location. 
+    This is the EEZ folder you will need in order to generate the image.
