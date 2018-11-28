@@ -11,6 +11,24 @@ If search is successful, you should see a link e.g.
   
   At the bottom of the page, you should see a line in this format:
     [Download	Layer: MarineRegions:eez - format:]
+    
     For the format, choose "Shapefile".
     Click "Download" and save the folder to your chosen location. 
     This is the EEZ folder you will need in order to generate the image.
+    
+    Rename this folder (my recommendation) such that it displays "[eez]_[country_name]" e.g "eez_thailand".
+    Put this folder into eez_example, which you will need to download from this repository.
+    
+    In order to view the respective EEZ, you will need to change the directory value in "generateEEZ.R".
+    The line that you will need to edit is this:
+      eez <- readOGR(dsn = "./eez_vietnam/",...)
+      
+      * currently, the eez that the code is taking is in the eez_vietnam directory.
+      * suppose you want to change to singapore eez 
+        (assuming you have downloaded the folder from the links above and renamed it to "eez_singapore")
+      * you will need to change the dsn to: 
+        eez <- readOGR(dsn = "./eez_singapore/",...)
+        
+    Once the above steps have been completed, just run the code in R. 
+    An index.html image should show in your browser.
+    
